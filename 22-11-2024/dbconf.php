@@ -1,9 +1,9 @@
 <?php
 //constant variable
-define('SERVERNAME', 'localhost');
+define('SERVERNAME', '172.0.0.1:3306');
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DBNAME', 'bookdb');
+define('DBNAME', 'book');
 try {
 	//connect with database
 	$connect = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBNAME);
