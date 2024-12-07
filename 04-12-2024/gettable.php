@@ -10,7 +10,7 @@
 //get the db connection file
 require_once 'conf/dbconf.php';
 require_once 'fun/myfunc.php';
-//PrintTable("books",$connect);
+//PrintTable("book",$connect);
 //echo $_SERVER['PHP_SELF']; //get the file name
 ?>
 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET">
@@ -27,7 +27,7 @@ require_once 'fun/myfunc.php';
 
 <?php
 if (isset($_GET['bkname']) && $_GET['bkname'] != '') {
-	SearchBooks($_GET['bkname'],$connect);
+	SearchBooks($_GET['bookname'],$connect);
 }
 	
 ?>
