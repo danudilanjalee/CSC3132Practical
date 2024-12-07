@@ -27,7 +27,7 @@ require_once 'fun/myfunc.php';
 
 <?php
 if (isset($_GET['bkname']) && $_GET['bkname'] != '') {
-	SearchBooks($_GET['bookname'],$connect);
+	SearchBook($_GET['bookname'],$connect);
 }
 	
 ?>
