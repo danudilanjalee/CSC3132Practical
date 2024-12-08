@@ -49,7 +49,7 @@ catch(Exception $e){
  function Searchestudent($name,$connect){
             try{
             
-                $sql = "SELECT * FROM  student where name like '%$name%' ";
+                $sql = "SELECT * FROM book where name like '%$name%' ";
             
             
                 $result = mysqli_query($connect,$sql);
