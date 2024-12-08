@@ -12,9 +12,10 @@ require_once 'dbconf.php'; //(conf/dbconf.php) (folder/file)
 require_once 'myfunc.php';
 
 
- $book_id = $_GET['book_id'];
+ $id = $_GET['id'];
 
-SearchBook($id,$connect);
+ studentdetails($id,$connect);
+
 
 
 ?>
